@@ -1,0 +1,81 @@
+html {
+    background-color: #eee !important;
+}
+
+body {
+    background-color: #eee !important;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+#nomeProjeto {
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: fonteNomeProjeto;
+}
+
+@font-face {
+    font-family: fonteNomeProjeto;
+    src: url(../enixe/Enixe.otf);
+}
+
+option {
+    text-align: center;
+    font-size: 20px;
+}
+
+label {
+    font-size: 25px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+}
+
+form{
+    background-color: #fff;
+    height: 100%;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.container {
+    margin-top: 15%;
+    height: 100%;
+}
+
+.container-principal {
+    height: 100%;
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+#botaoEnviar {
+    width: 100%;
+    margin-left: 2%;
+}
+
+.navbar{
+    background-color: rgb(0, 149, 255) !important;
+    min-height: auto;
+   
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    color: #FFF
+}

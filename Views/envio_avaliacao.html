@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/jquery-3.6.0.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Satisfation Survey</title>
+</head>
+
+<body>
+    <nav class="navbar is-info">
+        <div class="navbar-item">
+            <div class="field is-grouped">
+                <span id="nomeProjeto" onclick="easteregg()">Satisfaction Survey</span>
+            </div>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="field is-grouped">
+                    <p class="control">
+                        <a class="bd-tw-button button is-dark">
+                            <span class="icon">
+                                <i class="fas fa-solid fa-user"></i>
+                            </span>
+                            <span>
+                                Perfil
+                            </span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a class="button is-primary" onclick="logout()">
+                            <span>
+                                Sair
+                            </span>
+                            <span class="icon">
+                                <i class="fas fa-solid fa-arrow-right"></i>
+                            </span>
+
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <form name="formulario" autocomplete="off" method="post">
+                    <h1 class="title" id="titulo">
+                        Pesquisa de Satisfação
+                    </h1>
+                    <br>
+                    <label>Qual a sua nota para a aula?</label>
+                    <br>
+                    <label class="radio" for="nota1" style="margin-left: 20%;">1</label>
+                    <input type="radio" name="nota" id="avalInput" value="1" required>
+
+                    <label class="radio" for="nota2">2</label>
+                    <input type="radio" name="nota" id="avalInput" value="2" required>
+
+                    <label class="radio" for="nota3">3</label>
+                    <input type="radio" name="nota" id="avalInput" value="3" required>
+
+                    <label class="radio" for="nota4">4</label>
+                    <input type="radio" name="nota" id="avalInput" value="4" required>
+
+                    <label class="radio" for="nota5">5</label>
+                    <input type="radio" name="nota" id="avalInput" value="5" required>
+
+                    <br><br>
+                    <label>Disciplina</label>
+                    <br>
+                    <select id="disciplinaInput" name="cursos" required>
+                        <option value="">Escolha sua disciplina</option>
+                        <option value="1">Desenvolvimento WEB III</option>
+                        <option value="2">Sistemas Operacionais</option>
+                        <option value="3">Banco de Dados</option>
+                        <option value="4">Projeto integrador</option>
+                    </select>
+
+                    <br><br>
+                    <label>Escreva um comentário sobre a aula de hoje</label>
+                    <textarea placeholder="Escreva um comentário ou uma dúvida" cols="50" rows="4"
+                        id="mensagemInput" style="padding-left: 10px;"></textarea>
+                    <br><br>
+                    <button type="button" class="btn btn-primary" id="botaoEnviar" onclick="envio()">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
